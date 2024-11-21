@@ -232,7 +232,7 @@ int main()
     string gammaOutputFilename = "output_gamma.ppm";
     string grayWorldOutputFilename = "output_grayworld.ppm";
     string gaussianFileName = "output_gaussian.ppm";
-    // string outputFileName = "enhancedOutput.ppm";
+    string outputFileName = "enhancedOutput.ppm";
 
     vector<Pixel> image;
     int width, height;
@@ -279,41 +279,41 @@ int main()
 
     float contrastFactor = 1.2f; // Reduce contrast
     int brightnessValue;
-    // bool keepEnhancing  = true;
+    bool keepEnhancing  = true;
 
-    // do
-    // {
-    //     int choice;
-    //     cout << "Do you wish to enhnace the image further? (Yes = 1 / No = 2): ";
-    //     cin >> choice;
-    //     switch (choice)
-    //     {
-    //     case 1:
-    //         // Brightness adjustment
+    do
+    {
+        int choice;
+        cout << "Do you wish to enhnace the image further? (Yes = 1 / No = 2): ";
+        cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            // Brightness adjustment
 
-    //         cout << "Enter the value for increasing brightness (0-50): ";
-    //         cin >> brightnessValue;
-    //         adjustBrightness(gammaImage, width, height, brightnessValue);
-    //         adjustContrast(gammaImage, width, height, contrastFactor);
+            cout << "Enter the value for increasing brightness (0-50): ";
+            cin >> brightnessValue;
+            adjustBrightness(gammaImage, width, height, brightnessValue);
+            adjustContrast(gammaImage, width, height, contrastFactor);
 
-    //         // Save the enhanced image
-    //         if (!writePPM("enhancedOutput.ppm", gammaImage, width, height))
-    //         {
-    //             cerr << "Error saving enhanced image." << endl;
-    //             return -1;
-    //         }
-    //         cout << "Enhanced image saved as"<<outputFileName << endl;
-    //         break;
+            // Save the enhanced image
+            if (!writePPM("enhancedOutput.ppm", gammaImage, width, height))
+            {
+                cerr << "Error saving enhanced image." << endl;
+                return -1;
+            }
+            cout << "Enhanced image saved as"<<outputFileName << endl;
+            break;
 
-    //     case 2:
-    //         keepEnhancing = false;
-    //         break;
+        case 2:
+            keepEnhancing = false;
+            break;
 
-    //     default:
-    //         cout << "Wrong Choice";
-    //     }
+        default:
+            cout << "Wrong Choice";
+        }
 
-    // } while (keepEnhancing);
+    } while (keepEnhancing);
 
     return 0;
 }
