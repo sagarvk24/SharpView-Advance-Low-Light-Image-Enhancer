@@ -1,0 +1,711 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #8bb2ff;
+    /* background: #f3e566; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    color: #333;
+    background: url("../static/2.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    height:90px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #4c51bf;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(160, 61, 160);
+    background: linear-gradient(to right, rgb(90, 14, 90), rgb(255, 255, 255));
+    background: linear-gradient(to right, #141a83, #14e77d);
+    background: linear-gradient(to right, #040734, #193fff);
+
+}
+
+.nav-tagline{
+    height: 100%;
+    width: 370px;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    padding: 4px;
+    /* background-color: aliceblue; */
+}
+
+.nav-tagline pre{
+    font-family: 'Montserrat';
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #fff;
+    /* margin-bottom: 3px; */
+}
+
+.nav-tagline span{
+    font-family: 'Exo 2';
+    font-size: 17px;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.nav-end{
+    height:100%;
+    box-sizing: border-box;
+    /* padding: 4px; */
+    width: 270px;
+    /* border: 3px solid black; */
+    margin-left: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
+a:visited{
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.git-box{
+    display: flex;
+    box-sizing: border-box;
+    /* border: 4px ridge green; */
+    margin-left: 30px;
+}
+
+#git{
+    cursor: pointer;
+
+}
+
+.git-text{
+    /* margin-left: 5px; */
+    /* border: 2px ridge black; */
+    box-sizing: border-box;
+    width: 290px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 15px;
+    background-color: rgb(255, 48, 135);
+    /* padding-top: 5px; */
+    /* padding-left: 3px; */
+}
+
+.git-text span{
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+
+.container-box{
+    /* padding-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    box-sizing: border-box;
+}
+
+.nav-left{
+    height: 86vh;
+    width: 50px;
+    box-sizing: border-box;
+    background-color: #5a67d8;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+    background: linear-gradient(to bottom, rgba(142, 45, 226, 0.3), rgba(15, 5, 105, 0.8));
+}
+
+.left-content{
+    height:190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /* border: 5px solid black; */
+
+}
+
+.icon1{
+    height: 45px;
+    /* border: 2px solid black; */
+}
+
+.mail{
+    height:35px;
+    /* border: 1px solid black; */
+    margin-top: 180px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 80%;
+    height: 310px;
+    /* border: 4px ridge black; */
+    margin: 0px auto ;
+    background: #04155e;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    /* border: 4px solid white; */
+    margin-top: 120px;
+
+}
+
+.container h1{
+    color: #fff;
+    font-size: 39px;
+    font-family: 'Exo 2';
+}
+
+.upload-section label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+}
+
+.upload-section input{
+    font-family: 'Exo 2';
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+    margin-left: 140px;
+}
+
+#imageUpload {
+    display: none;
+}
+
+.upload-section label[for="imageUpload"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+.upload-section label[for="imageUpload"]:hover{
+    background-color: #0056b3;
+}
+
+.file-name {
+    /* border: 2px solid yellow; */
+    font-size: 13px;
+    margin-left: 10px;
+    color: #fff;
+    font-family: 'Poppins';
+    margin-bottom: 0px;
+
+}
+
+.footer{
+    height:150px;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top: 10px;
+    /* background-color: #0036a1; */
+    background-color: rgb(216, 0, 50);
+    background-color: rgb(160, 61, 160);
+    /* background-color: #4c51bf; */
+    background: linear-gradient(to right, #040734, #193fff);
+}
+
+.foot-head1{
+    height:74px;
+    width: fit-content;
+    box-sizing: border-box;
+    /* background-color: palegreen; */
+}
+
+.foot-head1 pre{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    letter-spacing: 1.4px;
+    /* margin-bottom: 2px; */
+    color: #fff;
+    font-family:'Montserrat';
+}
+
+.foot-head1 span{
+    height: fit-content;
+    margin-left: 150px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Exo 2";
+}
+
+.foot-head2{
+    height: fit-content;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(255, 247, 3);
+    color: #000000;
+    padding: 5px;
+    font-weight: 800;
+}
+
+.accepted-formats span{
+    font-family: 'Poppins';
+    font-size: 14px;
+    /* border: 2px solid yellow; */
+    margin-left: 10px;
+}
+
+.foot-head2 h2{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa';
+}
+
+h1 {
+    color: #5a67d8;
+    margin-bottom: 1.5rem;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 19px;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background: #5a67d8;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: greenyellow;
+    background-color: rgb(255, 20, 102);
+    color: #000;
+    font-weight: 800;
+}
+
+button:hover {
+    background: #4c51bf;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in-out;
+    overflow: auto;
+}
+
+.modal-content {
+    background: #393a3a;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 8px;
+    width: 38%;  /* Adjust for a larger modal */
+    max-width: 800px;
+    /* max-height: 85%; */
+    height: 65%;
+    overflow: auto;
+    animation: slideUp 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close Button */
+.close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+/* Image Grid for Enhanced Images */
+.modal-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns for a 2x2 layout */
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.modal-images img {
+    width: 1000px;  /* Full width within grid cells */
+    max-width: 580px; /* Adjust as needed for larger images */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-images img:hover {
+    transform: scale(1.15);
+}
+
+/* Single Image View Styling */
+.modal-single-image {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.team-details{
+    height:320px;
+    width: 100%;
+    /* background-color: rgb(255, 13, 69); */
+    /* background-color: blue; */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #1b1a1a;
+    /* border: 2px solid black; */
+    background: linear-gradient(to right, #040734, #193fff);
+}
+
+.team-box{
+    height: 295px;
+    width: 75%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    border: 3px solid yellow;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Soft shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cards{
+    height: 280px;
+    width: 100%;
+ /* background-color: turquoise;  */
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.card1{
+    height: 100%;
+    width: 25%;
+    /* background-color: rgb(255, 57, 90); */
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.image-box{
+    height:80%;
+    width: 100%;
+    /* background-color: #95f852; */
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.details{
+    /* border: 2px solid black; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: beige; */
+    background-color: #c3d7ff;;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.details pre{
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    font-weight: 1000;
+}
+
+.details span{
+    font-size: 15px;
+    font-weight: 600;
+    font-family:'Exo 2';
+}
+
+#sagar{
+    border-radius: 50%;
+}
+
+#arsh{
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.copyright-box{
+    height: 20px;
+    width: 100vw;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 14px;
+    font-family: 'Comfortaa';
+}
+
+.left-content2{
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+
+/* Animation for GitHub icon */
+.git-box img:hover {
+    animation: swivel 1.2s forwards;
+}
+
+@keyframes swivel {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}
+
+/* Animation for "Contribute Here" text */
+.git-text:hover {
+    animation: translate-up 0.7s forwards;
+}
+
+@keyframes translate-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Quick shaking effect for icons in nav-left */
+.nav-left .icon1:hover {
+    animation: shake 0.7s forwards;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Email icon rotation */
+.mail img:hover {
+    animation: rotate 0.7s forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+/* Animation for image-box images */
+.image-box img:hover {
+    animation: scale-out 0.9s forwards;
+}
+
+@keyframes scale-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Button Colors */
+button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #218838; 
+}
+
+/* "Contribute Here" Button Colors */
+.git-text {
+    background-color: #70b3ff; /* Blue */
+}
+
+.git-text:hover{
+    background-color: #b4daff; 
+}
+
+/* Footer Color */
+.footer {
+    background-color: #2D2D2D; /* Dark grey */
+}
+
+
+.foot-head2 {
+    background: linear-gradient(to right, #D5006D, #FF6F91);
+    background: linear-gradient(to left, #FFB6C1, #fff700);
+    background: linear-gradient(to right, #f3e993, #FFD700, #fff59f);
+    color: #000000;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .navbar, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container {
+        width: 95%;
+    }
+    .nav-left {
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .modal-content {
+        width: 90%;
+    }
+}
+
+
+/* Add these styles in your styles.css file */
+.image-wrapper {
+    text-align: center;
+    margin: 20px;
+    display: inline-block;/* Ensure 4 images per row */
+    box-sizing: border-box;
+}
+
+
+.image-label {
+    font-size: 13px; /* Adjust font size to make labels smaller */
+    color: #f6eeee; /* Lighter grey for a modern, minimal look */
+    margin-top: 10px;
+    font-weight: bold; /* Bold labels for better emphasis */
+    text-transform: uppercase; /* Optional: capitalize labels for a modern feel */
+    letter-spacing: 0.7px; /* Optional: space out the letters for style */
+    font-family: 'Exo 2';
+}
+
+
+/* Enhanced Box Container */
+#enhancedBox {
+    position: relative; /* Required to position the button relative to this box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+/* Enhanced Image */
+#enhancedBox img {
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+

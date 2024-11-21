@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharpView: Advance Image Enhancement Tool</title>
+    <!-- Adjusted CSS file path to 'Frontend' if using a static folder in Flask -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../static/meta.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-tagline">
+                <pre>SharpView</pre>
+                <span>Advance Low-Light Image Enhancer</span>
+            </div>
+
+            <div class="nav-end">
+                <div class="git-box">
+                    <a href="https://github.com/sagarvk24/SharpView-Advance-Low-Light-Image-Enhancement-using-Cpp.git"
+                        target="_blank"><img src="../static/Git.png" id="git" alt="Github Logo" width="69"
+                            height="70"></a>
+
+                </div>
+
+                <div class="git-text">
+                    <a href="https://github.com/sagarvk24/SharpView-Advance-Low-Light-Image-Enhancement-using-Cpp.git"
+                        target="_blank"><span>Contribute Here</span></a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-box">
+        <div class="nav-left">
+
+            <div class="left-content">
+                <div class="icon1">
+                    <a href="https://cplusplus.com/doc/tutorial/" target="_blank"><img src="../static/C++.png"
+                            alt="C++ Logo" width="42">
+                    </a>
+                </div>
+
+                <div class="icon1">
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank"><img src="../static/ui.png"
+                            alt="HTML, CSS, JS Icon" width="39">
+                    </a>
+                </div>
+                <div class="icon1">
+                    <a href="https://flask.palletsprojects.com/en/stable/" target="_blank"><img
+                            src="../static/flask.png" alt="Flask App Icon" width="35"
+                            style="margin-left: 4px; filter: invert();">
+                    </a>
+                </div>
+            </div>
+
+            <div class="left-content2">
+
+                <div class="icon1">
+                    <a href="https://drive.com" target="_blank"><img src="../static/docs.png" alt="Documentation Icon"
+                            width="35" style="margin-left: 2px; filter: invert();">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="mail">
+                <a href="mailto:sagarthapliyal24@gmail.com" target="_blank"><img src="../static/Gmail.png"
+                        alt="Write to Us" width="35"></a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h1>Image Enhancement Tool</h1>
+            <div class="upload-section">
+                <label for="imageUpload">Choose Image to Enhance</label>
+                <!-- Accept multiple image formats supported by Flask endpoint -->
+                <input type="file" id="imageUpload" accept=".jpg, .jpeg, .png, .ppm">
+                <span class="file-name" id="fileName">No file chosen</span> <!-- Display file name here -->
+                <div class="button-group">
+                    <button id="viewButton">View Image</button>
+                    <button id="enhanceButton">Enhance Image</button>
+                </div>
+                
+                <div class="accepted-formats">
+                    <span>Accepted Formats: .jpeg, .jpg, .png</span>
+                </div>
+                <div id="enhancedBox">
+                <!-- Enhanced images will appear here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="footer">
+            <div class="foot-head1">
+                <pre>SharpView</pre>
+                <span>Powered by C++</span>
+            </div>
+
+            <div class="foot-head2">
+                <h2>ABOUT US</h2>
+            </div>
+
+            <div class="team-details">
+                <div class="team-box">
+                    <div class="cards">
+                        <div class="card1">
+                            <div class="image-box">
+                                <img src="../static/Sagar1.jpeg" id="sagar" alt="Sagar Image" width="201">
+                            </div>
+                            <div class="details">
+                                <pre>Sagar Thapliyal </pre>
+                                <span>Lead Engineer</span>
+                            </div>
+
+                        </div>
+                        <div class="card1">
+                            <div class="image-box">
+                                <img src="../static/Arsh2.jpg" id="arsh" alt="Arshdeep Image" width=210 height=205
+                                    style="margin-left: 10px;">
+                            </div>
+
+                            <div class="details">
+                                <pre>Arshdeep Kaur</pre>
+                                <span>SDET Engineer</span>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="image-box">
+                                <img src="../static/Aviral.jpg" id="arsh" alt="Aviral Image" width=198 height=205
+                                style="margin-left: 10px;">
+                            </div>
+
+                            <div class="details">
+                                <pre>Aviral Khanna</pre>
+                                <span>Support Engineer</span>
+                            </div>
+                        </div>
+                        <div class="card1">
+                            <div class="image-box">
+
+                            </div>
+
+                            <div class="details">
+                                <pre>Saksham Siwach</pre>
+                                <span>UI/UX Designer</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-box">
+                <span>2024 | All Copyrights Reserved | UPES </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal for viewing images -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalImages" class="modal-images"></div>
+        </div>
+    </div>
+    
+
+    <!-- Adjusted JS file path to 'Frontend' if using a static folder in Flask -->
+    <script src="/Frontend/script.js"></script>
+</body>
+
+</html>
